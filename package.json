@@ -1,0 +1,30 @@
+{
+  "name": "autocomplete-toggle",
+  "displayName": "Autocomplete Toggle",
+  "description": "一键开关编辑器自动补全/建议/内联提示",
+  "version": "0.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["autocomplete", "suggestions", "inline", "toggle", "editor", "productivity"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/vscode-autocomplete-toggle.git"
+  },
+  "license": "MIT",
+  "activationEvents": [
+    "onCommand:autocompleteToggle.toggle",
+    "onCommand:autocompleteToggle.enable",
+    "onCommand:autocompleteToggle.disable"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "autocompleteToggle.toggle", "title": "自动补全：开关切换" },
+      { "command": "autocompleteToggle.enable", "title": "自动补全：开启" },
+      { "command": "autocompleteToggle.disable", "title": "自动补全：关闭" }
+    ]
+  }
+}
